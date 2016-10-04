@@ -1,9 +1,14 @@
 Step 1: 
-	Make sure node(version >= 4.0) and npm (version >=3) are installed on your local machine and also path is set so that you can run node from anywhere on your machine.
+	Make sure node(version >= 4.0) and npm (version >=2) are installed on your local machine and also path is set so that you can run node and npm both from any location on your machine.
 	
 Step 2:
 	Open the command prompt and
-	navigate inside the root folder of the project where this instruction and other files and folders of the project is kept
+	navigate inside the root folder of the project where this instruction and other files and folders of the project is kept.
+	Here in root folder must be a file "package.json"
+	
+	run the command "npm install" to install all dependencies of nodejs.
+	after successfull instalation you must see a folder "node_modules" in root folder where package.json resides.
+	node_modules folder is containing all libraries of nodejs to run this project.
 	
 Step 3:
 	Run the command("node bin/www") from command line.
