@@ -1,0 +1,18 @@
+Step 1: 
+	Make sure node(version >= 4.0) and npm (version >=3) are installed on your local machine and also path is set so that you can run node from anywhere on your machine.
+	
+Step 2:
+	Open the command prompt and
+	navigate inside the root folder of the project where this instruction and other files and folders of the project is kept
+	
+Step 3:
+	Run the command("node bin/www") from command line.
+	This command will start the node server on port 3000 and keep the server running. 
+	If Server is got started successfully then you will see "Server is running on port 3000" on command prompt
+	
+	if port 3000 is already busy in local machine, you can change it in bin/www file.
+	
+	Type http://localhost:3000 in your browser.
+	
+	If the server is running successfully
+	You will see the landing page of the site

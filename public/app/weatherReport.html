@@ -1,0 +1,36 @@
+<div ng-if="ctrl.currentWeather.cod == '404' " class="alert alert-danger">
+  <strong>Error!</strong> No data found for your search. Please type correctly Postcode or Country Name OR Country Code
+</div>
+
+<div ng-if="ctrl.userNotAllow" class="form-group">
+  <label for="usr"></label>
+  <input ng-model="ctrl.input" type="text" class="form-control" placeholder="Enter Postcode or Country Name OR Country Code and HIT ENTER" ng-keyup="ctrl.handleKeyUp($event);" style="height: 65px; font-size: 20px; border-radius: 16px">
+</div>
+
+<div class="row">
+  <div class="col-sm-2"></div>
+  <div ng-if="ctrl.currentWeather.cod == '200' " class="col-sm-8 bgBlack mt100 tcw" style="min-height:400px; opacity:0.6; border-radius:20px;">
+	<div class="tcw">
+		<h1>{{ctrl.countryCode[ctrl.currentWeather.sys.country]}}<h1>
+	</div>
+	<div class="tcw">
+		<h3>Main: {{ctrl.currentWeather.weather[0].main}}<h3>
+	</div>
+	<div class="tcw">
+		<h3>Description: {{ctrl.currentWeather.weather[0].description}}<h3>
+	</div>
+	<div class="tcw">
+		<h3>Temperature: {{(ctrl.currentWeather.main.temp - 273.15).toFixed(2)}}<h3>
+	</div>
+	<div class="tcw">
+		<h3>Pressure: {{ctrl.currentWeather.main.pressure}}<h3>
+	</div>
+	<div class="tcw">
+		<h3>Humidity: {{ctrl.currentWeather.main.humidity}}<h3>
+	</div>
+	<div class="tcw">
+		<h3>Wind Speed: {{ctrl.currentWeather.wind.speed}}<h3>
+	</div>
+  </div>
+  <div class="col-sm-2"></div>
+</div>

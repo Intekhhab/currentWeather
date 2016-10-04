@@ -1,0 +1,19 @@
+body { 
+	background: url('../images/1-background-734110.jpg') no-repeat center center fixed;
+	-moz-background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+} 
+
+.bgBlack {
+	background-color:black;
+}
+
+.mt100 {
+	margin-top: 100px !important;
+}
+
+.tcw {
+	color: white;
+}
